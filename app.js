@@ -44,7 +44,7 @@ const connectSrcUrls = [
 const fontSrcUrls = []
 
 // const db_url = process.env.DB_URL
-const dbUrl =  "mongodb://localhost:27017/yelp-camp"
+const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp"
 
 mongoose.connect(dbUrl, {
     //pass in our option that it doesn't yell at us
